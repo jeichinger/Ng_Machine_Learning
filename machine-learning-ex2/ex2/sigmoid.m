@@ -9,10 +9,11 @@ g = zeros(size(z));
 % Instructions: Compute the sigmoid of each value of z (z can be a matrix,
 %               vector or scalar).
 
+% Element wise exponentiation
+g = (1+ exp(-z));
 
-
-
-
+% Element wise division
+g = 1./g;
 % =============================================================
 
 end
